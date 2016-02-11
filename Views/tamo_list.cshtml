@@ -1,0 +1,18 @@
+<h1>This is the best Tamogotchi ever!</h1>
+<ul>
+@foreach (var tamo in Model)
+{
+  <li>@tamo.GetName()</li>
+  <li>@tamo.GetFood()</li>
+  <li>@tamo.GetSleep()</li>
+  <li>@tamo.GetPhilosophy()</li>
+  <form action="/new_tamo_list" method="post">
+    <input name = "John" id="John">input example</input>
+  <button>Submit</button>
+  </form>
+</ul>
+}
+
+<!-- <button id ="Feeding" type="button" name="button">Food</button>
+<button id ="Sleep" type="button" name="button">Sleep</button>
+<button id ="Philosophy" type="button" name="button">Philosophy</button> -->

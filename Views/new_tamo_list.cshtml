@@ -1,0 +1,18 @@
+<h1>New Page!</h1>
+<ul>
+@foreach (var tamo in Model)
+{
+  <li>@tamo.GetName()</li>
+  <li>@tamo.GetFood()</li>
+  <li>@tamo.GetSleep()</li>
+  <li>@tamo.GetPhilosophy()</li>
+
+
+  <form action="/new_tamo_list" method="post">
+    <input>input example</input>
+  <button onclick= "Feeding" id ="Feeding" type="button" name="Feeding">Food</button>
+
+
+  </form>
+}
+</ul>
